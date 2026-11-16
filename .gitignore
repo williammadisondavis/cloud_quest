@@ -9,3 +9,6 @@ functions/*service-account*.json
 *.key
 *.pem
 .DS_Store
+
+firebase-debug.log
+firestore-debug.log
