@@ -1,0 +1,11 @@
+.dart_tool/
+.flutter-plugins*
+.packages
+build/
+coverage/
+functions/node_modules/
+functions/.env*
+functions/*service-account*.json
+*.key
+*.pem
+.DS_Store

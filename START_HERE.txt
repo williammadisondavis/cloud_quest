@@ -1,0 +1,11 @@
+This is a SOURCE OVERLAY, not a complete generated Flutter project.
+1) Run: cd ~/Desktop && flutter create cloud_quest
+2) Unzip cloud_quest_source.zip INTO ~/Desktop/cloud_quest (replace the matching files).
+3) Run: cd ~/Desktop/cloud_quest && flutter pub add firebase_core firebase_auth cloud_firestore cloud_functions
+4) Run: flutterfire configure --platforms=android (select the COURSE Firebase project)
+5) Run: firebase use --add (select the SAME project)
+6) Run: cd functions && npm install && cd ..
+7) Terminal A: firebase emulators:start --only auth,firestore,functions
+8) Terminal B: FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node functions/seed.js PROJECT_ID
+9) Terminal B: flutter run
+Important: this only supports local mock coach, NOT real Genkit/gateway until course starter/gateway is provided.
